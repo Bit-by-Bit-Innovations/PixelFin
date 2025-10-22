@@ -1,0 +1,14 @@
+{
+  "flex-1": { "flex": 1 },
+  "items-center": { "alignItems": "center" },
+  "justify-center": { "justifyContent": "center" },
+  "bg-bg": { "backgroundColor": "#0b0d0f" },
+  "bg-black": { "backgroundColor": "#000000" },
+  "text-white": { "color": "#ffffff" },
+  "text-center": { "textAlign": "center" },
+  "p-4": { "padding": 16 },
+  "mt-4": { "marginTop": 16 },
+  "mt-2": { "marginTop": 8 },
+  "text-2xl": { "fontSize": 24 },
+  "text-4xl": { "fontSize": 36 }
+}
