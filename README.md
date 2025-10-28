@@ -24,7 +24,7 @@ When the Expo Dev Tools open, scan the QR to run on your device or press i / a t
 - Fonts
   - Balance: Google VT323
   - Buttons/labels: Google Press Start 2P
-- Baseline deps also include: AsyncStorage, LinearGradient, Haptics, Lottie
+- Baseline deps also include: AsyncStorage, LinearGradient, Haptics, Asset/FileSystem helpers for sprites
 - EAS build profiles are configured in `eas.json` (development, preview, production)
 
 ## Design defaults (will be used in upcoming features)
@@ -47,10 +47,10 @@ If you change the Tailwind config, run `yarn tailwind:gen` to regenerate `styles
 ## Assets
 
 - App icon and splash placeholders live in `assets/` and are wired in `app.json`
-- Pixel-style Lottie placeholders are available for future animations:
-  - `assets/lottie/idle.json`
-  - `assets/lottie/happy.json`
-  - `assets/lottie/sad.json`
+- PixelPet sprites live in `assets/pet/`
+  - Add animation frames under `assets/pet/<mood>/*.png` (frames are sorted lexicographically and loop automatically)
+  - Drop a single PNG at `assets/pet/<mood>.png` to render a static pose
+  - Supported moods: `idle`, `happy`, `sad` — missing moods automatically fall back to idle
 
 ## Notes
 
